@@ -1,5 +1,4 @@
 curl
-curl_config.h
 curl_config.h.in
 tool_hugehelp.c
 stamp-h2
