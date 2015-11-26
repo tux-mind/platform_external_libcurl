@@ -71,7 +71,8 @@ LOCAL_C_INCLUDES += $(LOCAL_PATH)/lib/
 LOCAL_C_INCLUDES += external/openssl/include
 LOCAL_CFLAGS += $(common_CFLAGS)
 
-LOCAL_SHARED_LIBRARIES := libssl libcrypto libz
+LOCAL_SHARED_LIBRARIES := libz
+LOCAL_STATIC_LIBRARIES:= libcrypto_static libssl
 
 LOCAL_COPY_HEADERS_TO := libcurl/curl
 LOCAL_COPY_HEADERS := $(addprefix include/curl/,$(CURL_HEADERS))
